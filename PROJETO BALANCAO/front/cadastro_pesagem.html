@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pesagem - Agropecuária Vista Alegre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Agropecuária Vista Alegre</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cadastro_pesagem.html">Cadastro</a></li>
+                    <li><a href="consulta_pesagens.html">Consulta</a></li>
+                    <li><a href="movimentacoes.html">Movimentações</a></li>
+                    <li><a href="relatorios.html">Relatórios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="cadastroPesagem" class="content-section visible">
+            <h2>Cadastro de Pesagem</h2>
+            <form id="pesagemForm">
+                <div class="form-group">
+                    <label for="veiculo">Veículo:</label>
+                    <input type="text" id="veiculo" name="veiculo" required>
+                </div>
+                <div class="form-group">
+                    <label for="pesoEntrada">Peso de Entrada:</label>
+                    <input type="number" id="pesoEntrada" name="pesoEntrada" required>
+                </div>
+                <div class="form-group">
+                    <label for="pesoSaida">Peso de Saída:</label>
+                    <input type="number" id="pesoSaida" name="pesoSaida">
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Agropecuária Vista Alegre. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="cadastro_pesagem.js"></script>
+</body>
+</html>
